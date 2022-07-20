@@ -13,7 +13,7 @@ body:
       placeholder: Bug description 问题描述
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: reproduction
     attributes:
       label: Reproduction 复现
