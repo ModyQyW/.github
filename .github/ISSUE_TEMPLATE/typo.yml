@@ -10,7 +10,7 @@ body:
 
         If the typo / grammar issue is trivial and straightforward, you can help by **directly sending a quick pull request**!
         If you spot multiple of them, we suggest combining them into a single PR. Thanks!
-        如果错别字/语法问题是微不足道和直接的，你可以通过 **直接发送 PR** 来提供帮助！
+        如果错别字/语法问题是微不足道和直接的，你可以通过 **直接提交 PR** 来提供帮助！
         如果你发现了多个问题，我们建议将它们合并为一个 PR。谢谢!
   - type: textarea
     id: context
