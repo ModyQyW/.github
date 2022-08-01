@@ -1,40 +1,67 @@
-name: 🐞 Bug report 问题报告
-description: Report an issue 报告一个 issue
+name: |
+🐞 Bug report
+🐞 问题报告
+description: |
+Report an issue
+报告一个 issue
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report! 感谢你花时间填写这个问题报告！
+      Thanks for taking the time to fill out this bug report!
+      感谢你花时间填写这个问题报告！
   - type: textarea
     id: bug-description
     attributes:
-      label: Describe the bug 描述问题
-      description: A clear and concise description of what the bug is. If you intend to submit a PR for this issue, tell us in the description. Thanks! 清晰简洁地描述该bug是什么。如果你打算为这个问题提交一个PR，请在描述中告诉我们。谢谢!
-      placeholder: Bug description 问题描述
+      label: |
+      Describe the bug
+      描述问题
+      description: |
+      A clear and concise description of what the bug is. If you intend to submit a PR for this issue, tell us in the description. Thanks!
+      清晰简洁地描述这个 bug 是什么。如果你打算为这个问题提交一个 PR，请在描述中告诉我们。谢谢!
+      placeholder: |
+      Bug description
+      问题描述
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
-      label: Reproduction 复现
-      description: A [minimal reproduction](https://stackoverflow.com/help/minimal-reproducible-example) is **required**, otherwise the issue might be closed without further notice. 一个 [最小复现](https://stackoverflow.com/help/minimal-reproducible-example) 是 **必须的**，否则该问题可能会被关闭而没有进一步的通知。
-      placeholder: Reproduction 复现
+      label: |
+      Reproduction
+      复现
+      description: |
+      A [minimal reproduction](https://stackoverflow.com/help/minimal-reproducible-example) is **required**, otherwise the issue might be closed without further notice.
+      一个 [最小复现](https://stackoverflow.com/help/minimal-reproducible-example) 是 **必须的**，否则该问题可能会被关闭而没有进一步的通知。
+      placeholder: |
+      Reproduction
+      复现
     validations:
       required: true
   - type: textarea
     id: system-info
     attributes:
-      label: System Info 系统信息
-      description: Output of `npx envinfo --system --binaries --browsers` `npx envinfo --system --binaries --browsers` 的输出
+      label: |
+      System Info
+      系统信息
+      description: |
+      Output of `npx envinfo --system --binaries --browsers`
+      `npx envinfo --system --binaries --browsers` 的输出
       render: Shell
-      placeholder: System, Binaries, Browsers 系统、二进制、浏览器
+      placeholder: |
+      System, Binaries, Browsers
+      系统、二进制、浏览器
     validations:
       required: true
   - type: dropdown
     id: package-manager
     attributes:
-      label: Used Package Manager 使用的包管理器
-      description: Select the used package manager 选择你使用的包管理器
+      label: |
+      Used Package Manager
+      使用的包管理器
+      description: |
+      Select the used package manager
+      选择你使用的包管理器
       options:
         - npm
         - yarn
@@ -46,14 +73,26 @@ body:
   - type: checkboxes
     id: checkboxes
     attributes:
-      label: Validations 核对
-      description: Before submitting the issue, please make sure you do the following 在提交问题之前，请确保你做到以下几点
+      label: |
+      Validations
+      核对
+      description: |
+      Before submitting the issue, please make sure you do the following
+      在提交问题之前，请确保你做到以下几点
       options:
-        - label: Follow our [Code of Conduct](https://github.com/ModyQyW/.github/blob/main/CODE_OF_CONDUCT.md) 遵循我们的 [行为准则](https://github.com/ModyQyW/.github/blob/main/CODE_OF_CONDUCT.md)
+        - label: |
+        Follow our [Code of Conduct](https://github.com/ModyQyW/.github/blob/main/CODE_OF_CONDUCT.md)
+        遵循我们的 [行为准则](https://github.com/ModyQyW/.github/blob/main/CODE_OF_CONDUCT.md)
           required: true
-        - label: Check that there isn't already an issue that reports the same bug to avoid creating a duplicate. 检查是否已经有一个报告相同错误的问题，以避免重复创建。
+        - label: |
+        Check that there isn't already an issue that reports the same bug to avoid creating a duplicate.
+        检查是否已经有一个报告相同错误的问题，以避免重复创建。
           required: true
-        - label: Check that this is a concrete bug. For Q&A, please open a GitHub Discussion instead. 这是一个具体的错误。如有疑问，请 打开GitHub 讨论。
+        - label: |
+        Check that this is a concrete bug. For Q&A, please open a GitHub Discussion instead.
+        这是一个具体的错误。如有疑问，请开启 GitHub 讨论。
           required: true
-        - label: The provided reproduction is a [minimal reproducible](https://stackoverflow.com/help/minimal-reproducible-example) of the bug. 所提供的复现是这个问题的 [最小复现](https://stackoverflow.com/help/minimal-reproducible-example)。
+        - label: |
+        The provided reproduction is a [minimal reproducible](https://stackoverflow.com/help/minimal-reproducible-example) of the bug.
+        所提供的复现是这个问题的 [最小复现](https://stackoverflow.com/help/minimal-reproducible-example)。
           required: true
