@@ -1,0 +1,57 @@
+name: 🐞 问题报告
+description: 报告一个 issue
+body:
+  - type: markdown
+    attributes:
+      value: 感谢你花时间填写这个问题报告！
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 描述问题
+      description: 清晰简洁地描述这个 bug 是什么。如果你打算为这个问题提交一个 PR，请在描述中告诉我们。谢谢!
+      placeholder: 问题描述
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现
+      description: 一个 [最小复现](https://stackoverflow.com/help/minimal-reproducible-example) 是 **必须的**，否则该问题可能会被关闭而没有进一步的通知。
+      placeholder: 复现
+    validations:
+      required: true
+  - type: textarea
+    id: system-info
+    attributes:
+      label: 系统信息
+      description: 运行 `npx envinfo --system --binaries --browsers` 的输出，如果可以请附上 VSCode 的配置（如 Volar 版本、配置等）
+      render: Shell
+    validations:
+      required: true
+  - type: dropdown
+    id: package-manager
+    attributes:
+      label: 使用的包管理器
+      description: 选择你使用的包管理器
+      options:
+        - npm
+        - yarn
+        - pnpm
+        - bun
+        - n/a
+    validations:
+      required: true
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: 核对
+      description: 在提交问题之前，请确保你做到以下几点
+      options:
+        - label: 遵循我们的 [行为准则](https://github.com/ModyQyW/.github/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+        - label: 检查是否已经有一个报告相同错误的问题，以避免重复创建。
+          required: true
+        - label: 这是一个具体的错误。请开启 GitHub 讨论你的疑问。
+          required: true
+        - label: 所提供的复现是这个问题的 [最小复现](https://stackoverflow.com/help/minimal-reproducible-example)。
+          required: true

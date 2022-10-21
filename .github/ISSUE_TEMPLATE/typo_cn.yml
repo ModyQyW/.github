@@ -1,0 +1,14 @@
+name: 👀 错别字 / 语法修正
+description: 你可以直接提交一个 PR! 谢谢你!
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 欢迎 PR！
+
+        如果错别字/语法问题是微不足道和直接的，你可以通过 **直接提交 PR** 来提供帮助！
+        如果你发现了多个问题，我们建议将它们合并为一个 PR。谢谢!
+  - type: textarea
+    id: context
+    attributes:
+      label: 额外上下文
