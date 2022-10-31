@@ -23,9 +23,7 @@ body:
   - type: textarea
     id: system-info
     attributes:
-      label: |
-        System Info
-        系统信息
+      label: System Info
       description: Output of `npx envinfo --system --binaries --browsers`, and VSCode configs (like Volar version and configs) if possible
       render: Shell
     validations:
