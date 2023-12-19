@@ -34,7 +34,7 @@ body:
       label: 检查
       description: 在提交问题之前，请确保你做到以下几点
       options:
-        - label: 遵循我们的 [行为准则](https://github.com/uni-helper/.github/blob/main/CODE_OF_CONDUCT.md)
+        - label: 遵循我们的 [行为准则](https://github.com/ModyQyW/.github/blob/main/CODE_OF_CONDUCT.md)
           required: true
         - label: 检查是否已经有一个要求相同功能的问题，以避免重复创建。
           required: true
