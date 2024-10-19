@@ -55,3 +55,11 @@ body:
           required: true
         - label: 所提供的复现是这个问题的 [最小复现](https://stackoverflow.com/help/minimal-reproducible-example)。
           required: true
+  - type: checkboxes
+    id: contributions
+    attributes:
+      label: 贡献
+      description: 请注意，开源项目由志愿者维护，你的案例可能并不总是与其他案例相关。如果你能帮助调查并提出解决方案，事情就会进展得更快。
+      options:
+        - label: 我愿意提交一个 PR 修复这个问题
+        - label: 我愿意提交一个 PR 带有失败的测试（实际上只要去做就好，谢谢！）
