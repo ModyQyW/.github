@@ -42,12 +42,14 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: validations
+    id: checkboxes
     attributes:
       label: Validations
       description: Before submitting the issue, please make sure you do the following
       options:
-        - label: Follow our [Code of Conduct](https://github.com/ModyQyW/.github/blob/main/CODE_OF_CONDUCT.md)
+        - label: Follow our [Code of Conduct](https://github.com/uni-helper/.github/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+        - label: Read the [Contributing Guide](https://github.com/antfu/contribute) and [Notes from a tired maintainer](https://github.com/pi0/tired-maintainer).
           required: true
         - label: Check that there isn't already an issue that reports the same bug to avoid creating a duplicate.
           required: true
@@ -63,4 +65,3 @@ body:
       options:
         - label: I am willing to submit a PR to fix this issue
         - label: I am willing to submit a PR with failing tests (actually just go ahead and do it, thanks!)
-
