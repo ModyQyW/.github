@@ -42,12 +42,14 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: validations
+    id: checkboxes
     attributes:
       label: 核对
       description: 在提交问题之前，请确保你做到以下几点
       options:
-        - label: 遵循我们的 [行为准则](https://github.com/ModyQyW/.github/blob/main/CODE_OF_CONDUCT.md)
+        - label: 遵循我们的 [行为准则](https://github.com/uni-helper/.github/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+        - label: 阅读 [贡献指南](https://github.com/antfu/contribute) 和 [一位疲惫的维护者的笔记](https://github.com/ModyQyW/tired-maintainer)。
           required: true
         - label: 检查是否已经有一个报告相同错误的问题，以避免重复创建。
           required: true
@@ -63,3 +65,4 @@ body:
       options:
         - label: 我愿意提交一个 PR 修复这个问题
         - label: 我愿意提交一个 PR 带有失败的测试（实际上只要去做就好，谢谢！）
+
